@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fool</title>
+    <style>
+        div{
+            margin: auto;
+            width: 70%;
+            height: 50px;
+         
+            text-align: center;
+            font-size: 40px;
+        }
+        #m{
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+      
+        .b1{
+            background-color: chartreuse;
+            border-radius: 2rem;
+           width: 100px;
+            font-size: 15px;
+            padding: 0.5rem 1rem;
+            position: absolute;
+
+        }
+        .foolcontainer{
+            width: 100%;
+            text-align: center;
+            padding-top: 8rem;
+        }
+        body{
+            background-color: #4287f5;
+        }
+    </style>
+    <script>
+        function fun1(){
+            document.getElementById("m").innerHTML="OK YOU ARE FOOL (- _ -)";
+        }
+        function fun2(){
+            var x=parseInt(Math.random()*800);
+            var y=parseInt(Math.random()*400);
+            document.getElementById("m1").style.left=x+"px";
+            document.getElementById("m1").style.top=y+"px";
+
+        }
+    </script>
+</head>
+<body>
+    <div class="foolcontainer">
+    <div id="m">Are You Fool</div>
+    <button onclick="fun1()" class="b1">YES</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button onmouseenter="fun2()" id="m1" class="b1">NO</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</body>
+</html>
